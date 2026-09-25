@@ -3,8 +3,8 @@
 ## Hard limits
 
 - Maximum loss at the initial stop: 0.50% of current account equity.
-- Maximum TSLA market value: 10% of current account equity.
-- Maximum total exposure opened under this autonomous mandate: 10% of account equity.
+- Maximum TSLA market value: the smaller of USD 100 or 20% of current account equity.
+- Maximum total exposure opened under this autonomous mandate: the smaller of USD 100 or 20% of current account equity. Include open buy-order commitments when checking available exposure capacity.
 - Maximum concurrent TSLA swing positions: one.
 - No margin borrowing, short sales, options, leveraged products, or averaging down.
 
@@ -13,7 +13,7 @@ Fractional shares are permitted; do not round down to whole shares.
 Raw share size is the minimum of:
 
 1. `(account equity * 0.005) / (entry price - initial stop)`
-2. `(account equity * 0.10) / entry price`
+2. `min(100 USD, account equity * 0.20) / entry price`
 3. `verified unleveraged buying power / entry price`
 
 Round down only to broker-supported fractional precision (currently at most six decimal places). Recheck risk, exposure, cash availability, minimum order size, and supported order types after rounding. Entry price must exceed the initial stop. If required inputs cannot be verified, size is zero.

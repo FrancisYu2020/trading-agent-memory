@@ -18,7 +18,7 @@ Monitor TSLA on regular U.S. trading days at 09:30, 11:30, 13:30, and 15:30 Amer
 
 - The user authorized autonomous TSLA common-stock long swing execution inside the repository rules.
 - Initial stop risk must not exceed 0.50% of verified account equity.
-- TSLA market value must not exceed 10% of verified account equity.
+- TSLA market value and total mandate exposure must not exceed the smaller of USD 100 or 20% of verified account equity.
 - No options, margin borrowing, short sales, leveraged products, other symbols, or averaging down.
 - The 09:30 check is observation only; the first permitted entry decision is 11:30.
 - Broker or app approval requirements still apply to every action.
@@ -47,7 +47,13 @@ Before analysis, run `git pull --ff-only`. After a material journal or trade-rec
 
 ## 2026-09-25 update - fractional shares
 
-- User explicitly clarified that fractional shares are intended. Whole-share flooring is superseded by fractional sizing; the 0.50% risk and 10% concentration limits remain unchanged.
+- User explicitly clarified that fractional shares are intended. Whole-share flooring is superseded by fractional sizing; the 0.50% risk limit remains unchanged; the concentration cap was subsequently raised as recorded below.
 - User confirmed this is their private GitHub repository and explicitly authorized pushing the journal containing balances and trading data. Continue excluding account identifiers, credentials, tokens, and secrets.
 - Read-only Robinhood connectivity is verified; see the September journal.
 - The user subsequently authorized fractional-share market entries during regular trading hours; limit orders remain the default for whole shares. Execution remains BLOCKED only on the unresolved fractional protective-stop mechanism. A monitoring-only stop has not been approved. See the updated risk and strategy policies.
+
+## 2026-09-25 update - USD 100 exposure cap
+
+- User authorized raising the USD 50 position cap to USD 100 to improve whole-share feasibility. Apply the smaller of USD 100 or 20% of verified equity, without automatically increasing the dollar cap if equity grows.
+- Initial-stop risk remains 0.50% of equity (USD 2.50 at the last verified USD 500 equity). Do not tighten a technical stop merely to fit this budget.
+- The user wants a replacement in an active technology theme. Candidates have been discussed, but no specific replacement ticker has been selected; this cap change alone does not authorize orders in every discussed ticker.
