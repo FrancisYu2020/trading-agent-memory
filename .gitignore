@@ -1,0 +1,8 @@
+.env
+*.key
+*.pem
+secrets/
+credentials/
+account-statements/
+tax-documents/
+raw-account-export/
