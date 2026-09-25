@@ -8,12 +8,17 @@
 - Maximum concurrent TSLA swing positions: one.
 - No margin borrowing, short sales, options, leveraged products, or averaging down.
 
-Position size is the smaller of:
+Fractional shares are permitted; do not round down to whole shares.
 
-1. `floor((account equity × 0.005) / (entry price - initial stop))`
-2. `floor((account equity × 0.10) / entry price)`
+Raw share size is the minimum of:
 
-If either input cannot be verified, position size is zero.
+1. `(account equity * 0.005) / (entry price - initial stop)`
+2. `(account equity * 0.10) / entry price`
+3. `verified unleveraged buying power / entry price`
+
+Round down only to broker-supported fractional precision (currently at most six decimal places). Recheck risk, exposure, cash availability, minimum order size, and supported order types after rounding. Entry price must exceed the initial stop. If required inputs cannot be verified, size is zero.
+
+Fractional sizing does not waive limit-entry or protective-stop requirements. The current Robinhood interface supports fractional quantities only for regular-session market orders, not limit or stop orders. Until a compatible execution method or explicitly approved policy revision exists, fractional entries remain BLOCKED. Do not silently substitute market entries or periodic monitoring for broker-held stops.
 
 ## Execution controls
 

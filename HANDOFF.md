@@ -44,3 +44,10 @@ If monitoring moves to a replacement task that can access Robinhood, create or m
 Repository: `git@github.com:FrancisYu2020/trading-agent-memory.git`
 
 Before analysis, run `git pull --ff-only`. After a material journal or trade-record change, run `git diff --check`, commit with a clear message, and push to `origin`. Never force-push or store secrets.
+
+## 2026-09-25 update - fractional shares
+
+- User explicitly clarified that fractional shares are intended. Whole-share flooring is superseded by fractional sizing; the 0.50% risk and 10% concentration limits remain unchanged.
+- User confirmed this is their private GitHub repository and explicitly authorized pushing the journal containing balances and trading data. Continue excluding account identifiers, credentials, tokens, and secrets.
+- Read-only Robinhood connectivity is verified; see the September journal.
+- Execution remains BLOCKED: the current connector supports fractional quantities only for regular-session market orders, conflicting with existing limit-entry and protective-stop requirements. No market-entry exception or monitoring-only stop has been approved.
