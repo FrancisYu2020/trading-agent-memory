@@ -50,4 +50,4 @@ Before analysis, run `git pull --ff-only`. After a material journal or trade-rec
 - User explicitly clarified that fractional shares are intended. Whole-share flooring is superseded by fractional sizing; the 0.50% risk and 10% concentration limits remain unchanged.
 - User confirmed this is their private GitHub repository and explicitly authorized pushing the journal containing balances and trading data. Continue excluding account identifiers, credentials, tokens, and secrets.
 - Read-only Robinhood connectivity is verified; see the September journal.
-- Execution remains BLOCKED: the current connector supports fractional quantities only for regular-session market orders, conflicting with existing limit-entry and protective-stop requirements. No market-entry exception or monitoring-only stop has been approved.
+- The user subsequently authorized fractional-share market entries during regular trading hours; limit orders remain the default for whole shares. Execution remains BLOCKED only on the unresolved fractional protective-stop mechanism. A monitoring-only stop has not been approved. See the updated risk and strategy policies.

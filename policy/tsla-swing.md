@@ -29,7 +29,7 @@ The 9:30 ET check is observation only. A breakout seen at the open must remain v
 
 ## Entry and initial stop
 
-- Submit a day limit buy at or below the maximum permitted chase price.
+- For fractional shares, a regular-session day market buy is permitted by explicit user authorization, subject to every other setup and risk rule. Verify the fresh ask is at or below the chase ceiling immediately before submission; market fills can differ. For whole shares, submit a day limit buy at or below the maximum permitted chase price. The fractional protective-stop implementation must be resolved before entry.
 - Place the initial stop below the lower of:
   - entry minus two times the 14-day ATR; or
   - the most recent confirmed daily swing low.

@@ -18,11 +18,11 @@ Raw share size is the minimum of:
 
 Round down only to broker-supported fractional precision (currently at most six decimal places). Recheck risk, exposure, cash availability, minimum order size, and supported order types after rounding. Entry price must exceed the initial stop. If required inputs cannot be verified, size is zero.
 
-Fractional sizing does not waive limit-entry or protective-stop requirements. The current Robinhood interface supports fractional quantities only for regular-session market orders, not limit or stop orders. Until a compatible execution method or explicitly approved policy revision exists, fractional entries remain BLOCKED. Do not silently substitute market entries or periodic monitoring for broker-held stops.
+The user explicitly permits fractional-share market entries during regular trading hours. The current connector does not support fractional stop orders; the protective-stop requirement remains unresolved. Fractional entries remain BLOCKED until a compatible stop mechanism or an explicitly approved stop-policy revision exists. Periodic monitoring is not an approved substitute for broker-held stops.
 
 ## Execution controls
 
-- Use limit orders for entries. Do not cross an abnormal spread.
+- Fractional-share entries may use market orders during regular trading hours, as explicitly authorized by the user. Use limit orders for whole-share entries. Do not trade an abnormal spread. For market entries, size against a fresh ask, verify the chase ceiling immediately before submission, and reconcile actual fill price, quantity, exposure, and initial-stop risk afterward. A market order does not guarantee the quoted price or the chase ceiling; record any slippage or risk breach and apply the account-risk controls.
 - Define the stop and profit-management plan before submitting an entry.
 - Do not enter during the first 30 minutes or final 15 minutes of the regular session.
 - Do not open a position within two regular trading sessions before a scheduled TSLA earnings release.
