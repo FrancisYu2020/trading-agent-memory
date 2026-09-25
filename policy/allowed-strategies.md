@@ -1,32 +1,21 @@
-\# Allowed Strategies
+# Allowed Strategies
 
+## Autonomous execution
 
+- Long TSLA common stock under `policy/tsla-swing.md` and `policy/risk-policy.md`.
 
-Allowed:
+## Analysis only unless the user gives fresh explicit approval
 
+- Cash-secured puts.
+- Covered calls.
+- Defined-risk option spreads.
+- Long positions in any symbol other than TSLA.
 
+## Prohibited under the autonomous mandate
 
-\- Cash-secured put
-
-\- Covered call
-
-\- Long equity and ETF positions
-
-\- Defined-risk option spreads after explicit review
-
-
-
-Prohibited:
-
-
-
-\- Naked calls
-
-\- Unsecured short puts
-
-\- Margin borrowing
-
-\- 0DTE options
-
-\- Orders without current bid, ask and quote timestamp
-
+- Naked or unsecured options.
+- Margin borrowing or leveraged products.
+- Short stock.
+- Averaging down or martingale sizing.
+- 0DTE or intended intraday trading.
+- Any order that exceeds the risk or concentration limits.

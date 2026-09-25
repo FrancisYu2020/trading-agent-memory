@@ -1,72 +1,17 @@
-\# Trading Agent Instructions
+# Trading Agent Instructions
 
+Before analyzing a trade or placing an order, read:
 
+- `policy/risk-policy.md`
+- `policy/allowed-strategies.md`
+- `policy/tsla-swing.md`
+- `models/option-valuation.md` when options are involved
+- the current month's journal
 
-Before performing trading analysis, read:
+Treat these files as the source of truth. Never infer a looser rule from a past trade.
 
+The current autonomous mandate is limited to long TSLA common-stock swing trades. Orders are allowed only when every rule in the policy files passes. Options, margin, short sales, leverage, and other symbols require fresh explicit approval.
 
+If data is missing, stale, contradictory, or the broker connection cannot be verified, take no market action. A valid decision can be `NO TRADE`.
 
-\- `policy/risk-policy.md`
-
-\- `policy/allowed-strategies.md`
-
-\- `models/option-valuation.md`
-
-\- the current month's file under `journal/`
-
-
-
-\## Source of truth
-
-
-
-\- Robinhood is the source of truth for balances, positions, orders, fills and P\&L.
-
-\- Git stores strategy rules, assumptions and decision logs.
-
-\- Query Robinhood before evaluating portfolio exposure.
-
-\- Do not rely on old journal entries for current positions.
-
-
-
-\## Order safety
-
-
-
-\- Default to read-only analysis.
-
-\- Never submit, modify, roll or cancel an order without explicit approval in the current conversation.
-
-\- Approval must include symbol, contract, side, quantity and limit price.
-
-\- Show the complete order and resulting portfolio exposure before requesting approval.
-
-
-
-\## Option analysis
-
-
-
-\- Do not treat delta as real-world probability.
-
-\- High IV alone does not establish positive expected value.
-
-\- Separate market-implied values from independent forecasts.
-
-\- Include bid/ask spread, collateral yield, fees and tail scenarios.
-
-\- Calculate expected value before Kelly sizing.
-
-\- Use at most one-quarter Kelly after portfolio risk limits.
-
-\- If positive expected value is not supported, use zero position.
-
-
-
-\## Security
-
-
-
-Never store passwords, tokens, account numbers, tax documents or personal identifiers in this repository.
-
+Record every material thesis change, signal, submitted order, fill, cancellation, stop update, exit, and completed-trade review. Never store credentials, account numbers, tax data, or other secrets in this repository.
