@@ -39,7 +39,7 @@ The existing heartbeat ID `tsla`, now named `股票波段监控`, was migrated o
 
 Schedule remains weekdays at 09:30, 11:30, 13:30, and 15:30 America/New_York, with exchange-holiday and regular-session checks. The prompt now follows current repository policy, requires actual fresh tool discovery and broker calls, records connection failures as BLOCKED, and supports read-only comparison of the discussed replacement candidates. Replacement tickers are not authorized for trades yet.
 
-Manual connection verification succeeded at approximately 2026-09-28 14:29 ET. The first scheduled run after migration must report its actual connection outcome once; scheduled execution after migration is not yet verified. Expected next scheduled time at migration: 2026-09-28 15:30 ET. Maintain only one monitor for this mandate.
+Manual connection verification succeeded at approximately 2026-09-28 14:29 ET. The first scheduled run after migration triggered at 2026-09-28 15:31 ET and successfully called live broker endpoints at 15:32 ET. Scheduled connection verification is complete; see the current journal and work/monitor-status.md. Maintain only one monitor for this mandate.
 
 ## Repository workflow
 
