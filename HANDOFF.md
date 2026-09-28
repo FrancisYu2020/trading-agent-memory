@@ -35,9 +35,11 @@ Do not claim the connection works unless the task receives live, timestamped bro
 
 ## Automation
 
-The original task created an active heartbeat named `TSLA 波段监控` with automation ID `tsla`. It is attached to the original task and runs at the four monitoring times above. It remains blocked when Robinhood tools are absent.
+The existing heartbeat ID `tsla`, now named `股票波段监控`, was migrated on 2026-09-28 to task `01a0da0f-d4cd-7042-b41a-f9f3c4c82398`. Its persisted target and ACTIVE status were read back and verified. The original task is no longer its target; no second monitor was created.
 
-If monitoring moves to a replacement task that can access Robinhood, create or move the schedule there and then disable the original automation to prevent duplicate checks. Never run two order-capable monitors for the same mandate.
+Schedule remains weekdays at 09:30, 11:30, 13:30, and 15:30 America/New_York, with exchange-holiday and regular-session checks. The prompt now follows current repository policy, requires actual fresh tool discovery and broker calls, records connection failures as BLOCKED, and supports read-only comparison of the discussed replacement candidates. Replacement tickers are not authorized for trades yet.
+
+Manual connection verification succeeded at approximately 2026-09-28 14:29 ET. The first scheduled run after migration must report its actual connection outcome once; scheduled execution after migration is not yet verified. Expected next scheduled time at migration: 2026-09-28 15:30 ET. Maintain only one monitor for this mandate.
 
 ## Repository workflow
 
