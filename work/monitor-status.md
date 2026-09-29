@@ -1,18 +1,19 @@
 # Latest scheduled monitor run
 
-- Trigger 2026-09-29 11:30:46 ET; actual broker quotes 11:31:35-37 ET. Regular session; NYSE calendar verified in today's opening run.
-- Git pull and required reading complete. Connection SUCCESS through actual fresh account, portfolio, equity positions/orders, quotes and historical calls.
+- Trigger: 2026-09-29 13:30:48 ET; actual broker observations 13:31:33-44 ET, checked at 13:31:45 ET.
+- Regular session, normal trading day per NYSE calendar checked earlier today.
+- Git pull completed successfully; required files read; working tree initially clean.
+- Connection SUCCESS: freshly discovered account, portfolio, equity positions/orders, quotes and daily history all succeeded.
 - Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 500. No equity positions or equity orders.
-- Decision BLOCKED: unchanged TSLA fractional-stop limitation, whole-share concentration failure and unconfirmed next earnings date. No broker writes.
-- 185 completed split-adjusted daily bars per symbol through September 28. SMA-seeded EMAs; Wilder ATR14. All symbols fail breakout; TSLA now also fails prior-close trend filter. No actionable new opportunity.
-- Replacement symbols remain analysis-only. Earnings/news clearance for candidates not completed because technical conditions already fail.
-- Tesla earnings search found conflicting third-party dates, with October 21 explicitly unconfirmed; no issuer-confirmed next date located. News scan surfaced September 25 Semi production report (https://www.axios.com/2026/09/25/tesla-semi-trucking-mass-production-diesel) and previously noted Cybercab regulatory probe; not a complete news clearance.
-- No material change to execution decision, account or connectivity; no repeated notification or journal entry.
+- Decision BLOCKED: existing TSLA fractional protective-stop incompatibility, whole-share exposure cap failure and unconfirmed next earnings date persist. No broker write.
+- Freshly retrieved 185 completed split-adjusted daily bars per symbol through September 28. SMA-seeded EMA20/50 and Wilder ATR14; no incomplete bar used. All five fail breakout. Replacement symbols remain analysis-only.
+- Tesla IR search https://ir.tesla.com/ still yielded no confirmed next earnings date; third-party estimates conflict. News search surfaced a Reuters September 28 market report mentioning JPMorgan target reduction, not a new verified entry catalyst. This is not full pre-trade news clearance.
+- No material change to account, connectivity, authorization or trade decision; unchanged block stays quiet. No journal entry required.
 
 | Symbol | Price | EMA20 | EMA50 | ATR14 | 20-session high | Trend passes | Breakout |
 |---|---:|---:|---:|---:|---:|---|---|
-| TSLA | 353.4800 | 364.8209 | 362.5125 | 12.9163 | 386.8300 | false | false |
-| NVTS | 11.6900 | 11.7918 | 12.6933 | 0.7597 | 12.6300 | false | false |
-| SOUN | 5.9095 | 6.2844 | 6.5946 | 0.2765 | 7.3300 | false | false |
-| APLD | 24.9200 | 26.6251 | 28.3383 | 1.7394 | 29.1500 | false | false |
-| SMCI | 41.2424 | 39.4732 | 36.6728 | 2.3292 | 43.7599 | true | false |
+| TSLA | 352.695000 | 364.8209 | 362.5125 | 12.9163 | 386.8300 | false | false |
+| NVTS | 11.810000 | 11.7918 | 12.6933 | 0.7597 | 12.6300 | false | false |
+| SOUN | 5.875000 | 6.2844 | 6.5946 | 0.2765 | 7.3300 | false | false |
+| APLD | 25.155000 | 26.6251 | 28.3383 | 1.7394 | 29.1500 | false | false |
+| SMCI | 41.205000 | 39.4732 | 36.6728 | 2.3292 | 43.7599 | true | false |
