@@ -1,20 +1,11 @@
 # Latest scheduled monitor run
 
-- Trigger 2026-10-01 15:31:45 ET; actual broker quotes/check 15:32:29-40 ET. Normal regular session per today's exchange-calendar verification.
-- Git pull --ff-only succeeded; AGENTS, HANDOFF, required policies and October journal read. Starting working tree clean.
-- Connection SUCCESS: freshly discovered and successfully called accounts, portfolio, equity positions/orders, quotes and split-adjusted daily history.
-- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions and equity orders empty; no pagination cursor. No broker writes.
-- Decision BLOCKED: fractional protective stops unresolved; whole TSLA share exceeds USD 100 ceiling. Technical conditions fail and confirmed next earnings date remains unavailable. Initial risk budget USD 2.50 unchanged.
-- Recomputed SMA-seeded EMA20/50 and Wilder ATR14 from 187 completed split-adjusted daily bars through September 30. Quotes active/traded. Current unfinished daily bar excluded.
-
-| Symbol | Quote | Prior close | EMA20 | EMA50 | ATR14 | Prior20 high | Trend | Breakout |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| TSLA | 357.6526 | 354.81 | 362.8351 | 361.8460 | 12.2731 | 386.83 | Fail | No |
-| NVTS | 12.195 | 11.61 | 11.7692 | 12.6145 | 0.8159 | 12.9 | Fail | No |
-| SOUN | 6.085 | 6.02 | 6.2209 | 6.5436 | 0.2738 | 7.07 | Fail | No |
-| APLD | 24.235 | 24.37 | 26.3056 | 28.0724 | 1.6799 | 29.15 | Fail | No |
-| SMCI | 41.9199 | 41.07 | 39.7586 | 37.0090 | 2.2879 | 43.7599 | Pass | No |
-
-- No qualifying breakout; replacement symbols remain analysis-only. Full candidate earnings/news clearance not completed.
-- Refreshed news/earnings search did not establish a confirmed earnings date or new actionable development. Earlier same-day direct issuer check showed blank Q3 earnings date: https://ir.tesla.com/ . Third-party estimates remain inconsistent and are not confirmation. No full pretrade news clearance asserted.
-- No positions to manage or orders to cancel. No material account, signal, authorization or execution-state change; no journal/trade-record update. Suppress repeated notification.
+- Trigger 2026-10-02 09:31:05 ET; actual broker check/quotes 09:32:01-03 ET.
+- Normal trading day and regular session verified: https://www.nyse.com/trade/hours-calendars .
+- Git pull --ff-only succeeded; AGENTS, HANDOFF, required policy files and October journal read; starting tree clean.
+- Connection SUCCESS: freshly discovered and actually called accounts, portfolio, equity positions, equity orders and timestamped quotes.
+- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions and orders empty, no pagination cursor. No broker writes.
+- Decision BLOCKED (existing fractional protective-stop constraint unchanged). Opening observation only; no entry decision before 11:30.
+- Quotes active/traded: TSLA 365.5205, bid/ask 365.4/365.56, prior close 354.11; NVTS 12.5692, bid/ask 12.56/12.58, prior close 12.12; SOUN 6.125, bid/ask 6.12/6.13, prior close 6.05; APLD 25.48, bid/ask 25.5/25.54, prior close 24.16; SMCI 42.4199, bid/ask 42.38/42.42, prior close 41.92.
+- No complete entry evaluation in this opening check. Refresh at least 60 completed split-adjusted daily bars through October 1 and confirmed earnings/news before later entry decisions. Prior technical indicators are not represented as current.
+- Exposure ceiling USD 100 and initial risk budget USD 2.50 unchanged. Replacement symbols analysis-only. No material account/order/connectivity/authorization change; no journal update or repeated notification.
