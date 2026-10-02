@@ -1,11 +1,21 @@
 # Latest scheduled monitor run
 
-- Trigger 2026-10-02 09:31:05 ET; actual broker check/quotes 09:32:01-03 ET.
-- Normal trading day and regular session verified: https://www.nyse.com/trade/hours-calendars .
-- Git pull --ff-only succeeded; AGENTS, HANDOFF, required policy files and October journal read; starting tree clean.
-- Connection SUCCESS: freshly discovered and actually called accounts, portfolio, equity positions, equity orders and timestamped quotes.
+- Trigger 2026-10-02 11:31:07 ET; actual broker check/quotes 11:32:11-19 ET. Regular session; calendar verified in today's opening check.
+- Git pull --ff-only succeeded; required instructions, policies and October journal read. Starting tree clean.
+- Connection SUCCESS: fresh discovery and successful calls to accounts, portfolio, equity positions/orders, quotes and split-adjusted daily history.
 - Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions and orders empty, no pagination cursor. No broker writes.
-- Decision BLOCKED (existing fractional protective-stop constraint unchanged). Opening observation only; no entry decision before 11:30.
-- Quotes active/traded: TSLA 365.5205, bid/ask 365.4/365.56, prior close 354.11; NVTS 12.5692, bid/ask 12.56/12.58, prior close 12.12; SOUN 6.125, bid/ask 6.12/6.13, prior close 6.05; APLD 25.48, bid/ask 25.5/25.54, prior close 24.16; SMCI 42.4199, bid/ask 42.38/42.42, prior close 41.92.
-- No complete entry evaluation in this opening check. Refresh at least 60 completed split-adjusted daily bars through October 1 and confirmed earnings/news before later entry decisions. Prior technical indicators are not represented as current.
-- Exposure ceiling USD 100 and initial risk budget USD 2.50 unchanged. Replacement symbols analysis-only. No material account/order/connectivity/authorization change; no journal update or repeated notification.
+- Decision BLOCKED: TSLA fractional stops unresolved, whole share exceeds USD 100 cap and technical entry fails. Initial risk budget USD 2.50 unchanged.
+- 188 completed split-adjusted daily bars through October 1; SMA-seeded EMA20/50 and Wilder ATR14 recomputed; current unfinished bar excluded. Quotes active/traded.
+
+| Symbol | Quote | Prior close | EMA20 | EMA50 | ATR14 | Prior20 high | Trend | Breakout |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| TSLA | 373.26 | 354.11 | 362.0041 | 361.5426 | 11.8243 | 386.83 | Fail | No |
+| NVTS | 12.645 | 12.12 | 11.8026 | 12.5952 | 0.8183 | 12.9 | Fail | No |
+| SOUN | 5.8777 | 6.05 | 6.2046 | 6.5242 | 0.2685 | 6.946 | Fail | No |
+| APLD | 25.45 | 24.16 | 26.1013 | 27.9189 | 1.6421 | 29.15 | Fail | No |
+| SMCI | 43.12 | 41.92 | 39.9644 | 37.2016 | 2.2595 | 43.7599 | Pass | No |
+
+- Candidates remain analysis-only and no qualifying breakout. No complete candidate earnings/news clearance.
+- Material news: issuer search result today reports over 486,000 Q3 deliveries and 13.7 GWh storage deployments. Syndicated company-release search results report October 21 after-close earnings. Direct issuer and syndicated page opens failed; retain date as reported pending full-source verification, not a cleared trading gate.
+- Sources: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments and https://uk.finance.yahoo.com/news/tesla-third-quarter-2026-production-130600521.html .
+- Journal updated for new delivery announcement and reported earnings date. Notify once; no trade.
