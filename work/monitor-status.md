@@ -1,21 +1,21 @@
 # Latest scheduled monitor run
 
-- Trigger 2026-10-02 11:31:07 ET; actual broker check/quotes 11:32:11-19 ET. Regular session; calendar verified in today's opening check.
-- Git pull --ff-only succeeded; required instructions, policies and October journal read. Starting tree clean.
-- Connection SUCCESS: fresh discovery and successful calls to accounts, portfolio, equity positions/orders, quotes and split-adjusted daily history.
-- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions and orders empty, no pagination cursor. No broker writes.
-- Decision BLOCKED: TSLA fractional stops unresolved, whole share exceeds USD 100 cap and technical entry fails. Initial risk budget USD 2.50 unchanged.
-- 188 completed split-adjusted daily bars through October 1; SMA-seeded EMA20/50 and Wilder ATR14 recomputed; current unfinished bar excluded. Quotes active/traded.
+- Trigger 2026-10-02 13:32:10 ET; actual broker quotes/check 13:33:03-10 ET. Regular session; exchange calendar verified at today's opening check.
+- Git pull --ff-only succeeded; AGENTS, HANDOFF, all required policies and October journal read. Starting tree clean.
+- Connection SUCCESS: freshly discovered and successfully called accounts, portfolio, equity positions/orders, quotes and split-adjusted historical data.
+- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions/orders empty; no pagination cursor. No broker writes.
+- Decision BLOCKED: fractional protective stops unresolved; whole TSLA share exceeds USD 100 ceiling; technical setup fails. Initial risk budget USD 2.50 unchanged.
+- SMA-seeded EMA20/50 and Wilder ATR14 recomputed from 188 completed split-adjusted daily bars through October 1. Quotes active/traded; unfinished current bar excluded.
 
 | Symbol | Quote | Prior close | EMA20 | EMA50 | ATR14 | Prior20 high | Trend | Breakout |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| TSLA | 373.26 | 354.11 | 362.0041 | 361.5426 | 11.8243 | 386.83 | Fail | No |
-| NVTS | 12.645 | 12.12 | 11.8026 | 12.5952 | 0.8183 | 12.9 | Fail | No |
-| SOUN | 5.8777 | 6.05 | 6.2046 | 6.5242 | 0.2685 | 6.946 | Fail | No |
-| APLD | 25.45 | 24.16 | 26.1013 | 27.9189 | 1.6421 | 29.15 | Fail | No |
-| SMCI | 43.12 | 41.92 | 39.9644 | 37.2016 | 2.2595 | 43.7599 | Pass | No |
+| TSLA | 372.355 | 354.11 | 362.0041 | 361.5426 | 11.8243 | 386.83 | Fail | No |
+| NVTS | 12.3699 | 12.12 | 11.8026 | 12.5952 | 0.8183 | 12.9 | Fail | No |
+| SOUN | 5.8399 | 6.05 | 6.2046 | 6.5242 | 0.2685 | 6.946 | Fail | No |
+| APLD | 25.035 | 24.16 | 26.1013 | 27.9189 | 1.6421 | 29.15 | Fail | No |
+| SMCI | 43.23 | 41.92 | 39.9644 | 37.2016 | 2.2595 | 43.7599 | Pass | No |
 
-- Candidates remain analysis-only and no qualifying breakout. No complete candidate earnings/news clearance.
-- Material news: issuer search result today reports over 486,000 Q3 deliveries and 13.7 GWh storage deployments. Syndicated company-release search results report October 21 after-close earnings. Direct issuer and syndicated page opens failed; retain date as reported pending full-source verification, not a cleared trading gate.
-- Sources: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments and https://uk.finance.yahoo.com/news/tesla-third-quarter-2026-production-130600521.html .
-- Journal updated for new delivery announcement and reported earnings date. Notify once; no trade.
+- Candidates remain analysis-only; none meets both trend and breakout. SMCI remains below 43.7599 and its two-ATR risk per whole share exceeds USD 2.50. No complete candidate earnings/news clearance.
+- News search still centers on today's previously recorded Q3 delivery announcement. Reported October 21 after-close earnings date remains supported by syndicated company-release snippets, but issuer/Business Wire full-page retrieval failed again; retain pending full-source verification.
+- Sources: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments ; https://www.businesswire.com/news/home/20261002169209/en/ .
+- No new material account, order, signal or authorization change since prior check. No journal update or repeated news notification.
