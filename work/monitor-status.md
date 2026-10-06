@@ -1,22 +1,22 @@
 # Latest scheduled monitor check
 
-- Trigger 2026-10-06 12:01:17 ET; actual live reads approximately 12:01-12:02 ET.
-- Git pull --ff-only succeeded; all required policies, HANDOFF and current journal read; initial working tree clean.
-- Connection SUCCESS: fresh discovery and actual account, portfolio, equity positions/orders and timestamped quotes.
-- Account equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero. Equity positions/orders empty, no pagination cursor.
-- TSLA: 380.680000; bid/ask 380.660000/380.700000; trade 2026-10-06T16:02:03.923749729Z.
-- NVTS: 12.210100; bid/ask 12.210000/12.220000; trade 2026-10-06T16:01:56.974272291Z.
-- SOUN: 5.869900; bid/ask 5.860000/5.870000; trade 2026-10-06T16:01:50.688786483Z.
-- APLD: 25.122100; bid/ask 25.120000/25.130000; trade 2026-10-06T16:02:01.215671659Z.
-- SMCI: 43.265000; bid/ask 43.260000/43.270000; trade 2026-10-06T16:02:02.392451246Z.
-- Re-fetched 190 completed split-adjusted regular-session daily bars per symbol through October 5; no current partial bar. EMA SMA-seeded; Wilder ATR14.
-- TSLA: close 378.73; EMA20 364.3369; EMA50 362.5575; ATR14 12.74587; prior20 high 386.83.
-- NVTS: close 12.34; EMA20 11.9053; EMA50 12.5778; ATR14 0.82156; prior20 high 13.195.
-- SOUN: close 5.88; EMA20 6.1423; EMA50 6.4732; ATR14 0.27289; prior20 high 6.87.
-- APLD: close 24.7; EMA20 25.9057; EMA50 27.6971; ATR14 1.69501; prior20 high 29.15.
-- SMCI: close 43.19; EMA20 40.5926; EMA50 37.6809; ATR14 2.21418; prior20 high 44.585.
-- TSLA and SMCI pass trend but fail breakout; NVTS, SOUN and APLD fail trend and breakout. No technical entry among monitored symbols.
-- TSLA full issuer page rechecked: earnings October 21 after close, outside two-session restriction. https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments
-- News listing rechecked: https://www.benzinga.com/quote/tsla/news . Same delivery/political/chip-related headlines as prior check; no newly established material fact from this listing. No independent full news clearance for an order.
-- Decision BLOCKED: unchanged fractional protective-stop restriction; whole TSLA share exceeds USD 100 exposure cap. Alternatives analysis-only; their earnings/news gates not cleared. No orders placed, changed or cancelled.
-- No material state change; journal unchanged; quiet notification.
+- Trigger 2026-10-06 12:30:48 ET; actual broker reads approximately 12:31 ET.
+- Git pull --ff-only succeeded; AGENTS, HANDOFF, all required policies and October journal read; initial working tree clean.
+- Connection SUCCESS: fresh discovery and actual accounts, portfolio, equity positions/orders and timestamped quotes.
+- Account equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero; equity positions/orders empty with no next cursor.
+- TSLA: 380.440000; bid/ask 380.420000/380.450000; timestamp 2026-10-06T16:31:25.846863306Z.
+- NVTS: 12.296700; bid/ask 12.290000/12.300000; timestamp 2026-10-06T16:31:23.002174328Z.
+- SOUN: 5.815000; bid/ask 5.810000/5.820000; timestamp 2026-10-06T16:31:22.362785363Z.
+- APLD: 25.065000; bid/ask 25.060000/25.070000; timestamp 2026-10-06T16:31:25.993077129Z.
+- SMCI: 43.355000; bid/ask 43.350000/43.360000; timestamp 2026-10-06T16:31:26.451272093Z.
+- Retrieved 190 completed regular-session split-adjusted daily bars per symbol through October 5; partial/interpolated bars excluded; EMA SMA-seeded, ATR14 Wilder-smoothed.
+- TSLA: close 378.73; EMA20 364.3369; EMA50 362.5575; ATR14 12.74587; high20 386.83.
+- NVTS: close 12.34; EMA20 11.9053; EMA50 12.5778; ATR14 0.82156; high20 13.195.
+- SOUN: close 5.88; EMA20 6.1423; EMA50 6.4732; ATR14 0.27289; high20 6.87.
+- APLD: close 24.7; EMA20 25.9057; EMA50 27.6971; ATR14 1.69501; high20 29.15.
+- SMCI: close 43.19; EMA20 40.5926; EMA50 37.6809; ATR14 2.21418; high20 44.585.
+- All five symbols below prior20 highs. TSLA/SMCI trend passes; other three fail. No qualifying technical entry.
+- TSLA earnings October 21 after close, verified from full issuer release at previous check and corroborated by current SEC search result: https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm . Estimated aggregator dates do not override issuer-confirmed date.
+- Refreshed news search found no newly verified material event; search coverage is limited, not complete news clearance for a trade. Alternatives earnings/news not cleared.
+- Decision BLOCKED: unchanged fractional broker-stop restriction; whole TSLA share exceeds USD 100 exposure limit. SMCI minimum two-ATR risk exceeds USD 2.50 per whole share. Alternative tickers remain analysis-only.
+- No broker writes; no actionable change; journal unchanged.
