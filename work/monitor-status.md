@@ -1,21 +1,12 @@
 # Latest scheduled monitor run
 
-- Trigger 2026-10-02 15:32:12 ET; actual broker quotes/check 15:33:03-08 ET. Regular session; exchange calendar verified in today's opening check.
-- Git pull --ff-only succeeded; AGENTS, HANDOFF, required policies and October journal read; starting tree clean.
-- Connection SUCCESS: freshly discovered and called accounts, portfolio, equity positions/orders, timestamped quotes and split-adjusted daily history.
-- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions/orders empty, no pagination cursor. No broker writes.
-- Mandate decision BLOCKED: TSLA fractional protective stops unresolved, whole share exceeds USD 100 cap and technical setup fails. Candidate SMCI: WATCH, new technical breakout but not executable.
-- Recomputed SMA-seeded EMA20/50 and Wilder ATR14 from 188 completed split-adjusted daily bars through October 1; unfinished current bar excluded. Quotes active/traded.
-
-| Symbol | Quote | Prior close | EMA20 | EMA50 | ATR14 | Prior20 high | Trend | Breakout |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| TSLA | 373.065 | 354.11 | 362.0041 | 361.5426 | 11.8243 | 386.83 | Fail | No |
-| NVTS | 12.4601 | 12.12 | 11.8026 | 12.5952 | 0.8183 | 12.9 | Fail | No |
-| SOUN | 5.815 | 6.05 | 6.2046 | 6.5242 | 0.2685 | 6.946 | Fail | No |
-| APLD | 25.32 | 24.16 | 26.1013 | 27.9189 | 1.6421 | 29.15 | Fail | No |
-| SMCI | 43.855 | 41.92 | 39.9644 | 37.2016 | 2.2595 | 43.7599 | Pass | Yes |
-
-- SMCI ask 43.86 exceeds trigger 43.7599 but is below chase ceiling 44.3248. Trend passes. Minimum two-ATR stop distance 4.5189 implies more than USD 4.5189 risk per whole share, exceeding USD 2.50 budget. A lower confirmed swing-low stop would increase risk. Whole-share size zero under current risk rule; do not tighten stop to force a trade.
-- SMCI remains analysis-only, without specific symbol authorization. Earnings/news and confirmed swing-low diligence not completed because risk/authorization gates already fail. No executable entry proposal.
-- Refreshed TSLA news search remains centered on today's delivery announcement and reported October 21 after-close earnings. Full-source earnings verification remains pending from prior failed retrievals. Source: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments .
-- Journal updated and notify once for new SMCI technical signal and risk limitation. No policy changes.
+- Trigger 2026-10-06 10:00:15 ET; actual account/portfolio/position/order/quote check approximately 10:01:02-06 ET.
+- Regular trading day/session confirmed: https://www.nyse.com/trade/hours-calendars .
+- Local execution RECOVERED: git pull --ff-only succeeded; AGENTS, HANDOFF, all required policies and October journal read.
+- Previous October 5 status-write attempts are present locally; preserved in work/monitor-status-2026-10-05.md. Prior commit/push was not established. Starting modification was solely the expected status file.
+- Connection SUCCESS: fresh discovery and actual successful accounts, portfolio, equity positions/orders and timestamped quote calls.
+- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits USD 0. Equity positions/orders empty; no pagination cursor.
+- Quotes active/traded, 2026-10-06T14:01:04-05Z: TSLA 380.565 (bid/ask 380.53/380.6); NVTS 12.68 (bid/ask 12.67/12.68); SOUN 5.895 (bid/ask 5.89/5.9); APLD 25.38 (bid/ask 25.37/25.39); SMCI 44.315 (bid/ask 44.3/44.34).
+- Decision BLOCKED (existing fractional protective-stop constraint remains); observation only before earliest 11:30 entry assessment. No broker writes.
+- No full signal/earnings/news assessment at this observation check. Refresh completed split-adjusted daily bars through October 5 before later entry decisions; no reuse of stale indicators as current.
+- Exposure ceiling USD 100 and initial risk budget USD 2.50 unchanged; replacement symbols analysis-only. Notify once for local execution recovery.
