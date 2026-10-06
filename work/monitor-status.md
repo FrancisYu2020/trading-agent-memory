@@ -1,22 +1,22 @@
 # Latest scheduled monitor check
 
-- Trigger 2026-10-06 15:01:51 ET; actual broker reads approximately 15:02 ET.
-- Git pull --ff-only succeeded; all required policy/HANDOFF/journal files read; initial working tree clean.
-- Connection SUCCESS: fresh discovery and actual accounts, portfolio, equity positions/orders and timestamped quotes.
+- Trigger 2026-10-06 15:30:21 ET; actual broker reads approximately 15:30-15:31 ET.
+- Git pull --ff-only succeeded; required files/current journal read; initial working tree clean.
+- Connection SUCCESS: fresh discovery and actual accounts, portfolio, equity positions/orders and quotes.
 - Account equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero; no equity positions/orders or next cursor.
-- TSLA: 380.150000; bid/ask 380.160000/380.190000; 2026-10-06T19:02:38.579547479Z.
-- NVTS: 12.135600; bid/ask 12.130000/12.140000; 2026-10-06T19:02:36.364797433Z.
-- SOUN: 5.790000; bid/ask 5.790000/5.800000; 2026-10-06T19:02:36.876732336Z.
-- APLD: 25.105000; bid/ask 25.100000/25.110000; 2026-10-06T19:02:38.09084206Z.
-- SMCI: 43.725000; bid/ask 43.720000/43.730000; 2026-10-06T19:02:37.625116835Z.
-- Re-fetched 190 completed split-adjusted regular daily bars per symbol through October 5; partial/interpolated excluded; EMA SMA-seeded, Wilder ATR14.
+- TSLA: 380.020000; bid/ask 380.010000/380.030000; 2026-10-06T19:31:00.558554089Z.
+- NVTS: 12.045000; bid/ask 12.040000/12.050000; 2026-10-06T19:30:59.731746822Z.
+- SOUN: 5.780000; bid/ask 5.770000/5.780000; 2026-10-06T19:30:58.217212631Z.
+- APLD: 25.140000; bid/ask 25.130000/25.140000; 2026-10-06T19:30:59.828529127Z.
+- SMCI: 43.550000; bid/ask 43.540000/43.560000; 2026-10-06T19:31:00.811688786Z.
+- Re-fetched 190 completed split-adjusted regular daily bars per symbol through October 5; partial/interpolated excluded; SMA-seeded EMA, Wilder ATR14.
 - TSLA: close 378.73; EMA20 364.3369; EMA50 362.5575; ATR14 12.74587; high20 386.83.
 - NVTS: close 12.34; EMA20 11.9053; EMA50 12.5778; ATR14 0.82156; high20 13.195.
 - SOUN: close 5.88; EMA20 6.1423; EMA50 6.4732; ATR14 0.27289; high20 6.87.
 - APLD: close 24.7; EMA20 25.9057; EMA50 27.6971; ATR14 1.69501; high20 29.15.
 - SMCI: close 43.19; EMA20 40.5926; EMA50 37.6809; ATR14 2.21418; high20 44.585.
-- All below breakout thresholds. TSLA/SMCI pass trend; other three fail. No qualifying technical entry.
-- TSLA earnings October 21 after close confirmed by issuer release read earlier today: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments .
-- Fresh news search https://www.benzinga.com/quote/tsla/news adds a truncated Cybercab showcase headline; details not verified and not treated as actionable news. Existing political/analyst/delivery themes remain. Full news clearance not claimed.
-- Decision BLOCKED: unchanged fractional protective-stop restriction; whole TSLA exceeds USD 100 cap. Alternatives analysis-only, earnings/news gates not cleared; SMCI whole-share two-ATR risk exceeds USD 2.50.
-- No broker writes; no material actionable change; journal unchanged.
+- All below breakout thresholds. TSLA/SMCI pass trend, other three fail. No qualifying technical entry.
+- TSLA earnings October 21 after close confirmed by issuer release earlier today: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments .
+- Refreshed news search including Cybercab showcase headline: https://www.benzinga.com/quote/tsla/news . Showcase details remain unverified; search also returned older September reports, not treated as new events. No independent full trade news clearance.
+- Decision BLOCKED: unchanged fractional broker-stop constraint; whole TSLA exceeds USD 100 cap. Alternatives analysis-only and earnings/news gates not cleared; SMCI two-ATR whole-share risk exceeds USD 2.50.
+- No broker writes or material actionable change; journal unchanged. Last scheduled check today, not a closing-price assessment.
