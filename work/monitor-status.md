@@ -1,15 +1,22 @@
 # Latest scheduled monitor check
 
-- Trigger 2026-10-06 11:31:47 ET; actual broker checks approximately 11:32 ET. Git pull succeeded; required files read; starting working tree clean.
-- Connection SUCCESS: newly discovered account, portfolio, equity positions/orders and quotes actually called. Account equity/cash/unleveraged buying power USD 500; pending deposits zero; no equity positions/orders or next cursor.
-- Quotes active/traded at 15:32:27-36Z: TSLA 381.125 (bid/ask 381.11/381.15); NVTS 12.285; SOUN 5.865; APLD 25.237; SMCI 43.5662.
-- 190 completed regular-session split-adjusted daily bars per symbol, January 2 through October 5; interpolated bars excluded. EMA seeded with first-period SMA, Wilder ATR14 seeded with first 14 true ranges.
-- Symbol: prior close / EMA20 / EMA50 / ATR14 / prior20 high.
-- TSLA: 378.73 / 364.3369 / 362.5575 / 12.7459 / 386.83. Trend passes; breakout fails.
-- NVTS: 12.34 / 11.9053 / 12.5778 / 0.82156 / 13.195. Trend and breakout fail.
-- SOUN: 5.88 / 6.1423 / 6.4732 / 0.27289 / 6.87. Trend and breakout fail.
-- APLD: 24.70 / 25.9057 / 27.6971 / 1.69501 / 29.15. Trend and breakout fail.
-- SMCI: 43.19 / 40.5926 / 37.6809 / 2.21418 / 44.585. Trend passes; breakout fails. Minimum two-ATR whole-share stop risk exceeds USD 2.50 budget.
-- Tesla earnings now verified by full issuer page: October 21 after close, beyond two-session exclusion. https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments .
-- News search and https://www.benzinga.com/quote/tsla/news reviewed: delivery-beat commentary and political/chip-related headlines; headlines are not independently verified trade clearance. No qualifying technical entry in any monitored symbol; alternative earnings/news clearance not completed.
-- Decision BLOCKED: unchanged fractional protective-stop constraint; whole TSLA share above USD 100 cap; no breakout. Replacement symbols analysis-only. No broker writes. No actionable change; stay quiet.
+- Trigger 2026-10-06 12:01:17 ET; actual live reads approximately 12:01-12:02 ET.
+- Git pull --ff-only succeeded; all required policies, HANDOFF and current journal read; initial working tree clean.
+- Connection SUCCESS: fresh discovery and actual account, portfolio, equity positions/orders and timestamped quotes.
+- Account equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero. Equity positions/orders empty, no pagination cursor.
+- TSLA: 380.680000; bid/ask 380.660000/380.700000; trade 2026-10-06T16:02:03.923749729Z.
+- NVTS: 12.210100; bid/ask 12.210000/12.220000; trade 2026-10-06T16:01:56.974272291Z.
+- SOUN: 5.869900; bid/ask 5.860000/5.870000; trade 2026-10-06T16:01:50.688786483Z.
+- APLD: 25.122100; bid/ask 25.120000/25.130000; trade 2026-10-06T16:02:01.215671659Z.
+- SMCI: 43.265000; bid/ask 43.260000/43.270000; trade 2026-10-06T16:02:02.392451246Z.
+- Re-fetched 190 completed split-adjusted regular-session daily bars per symbol through October 5; no current partial bar. EMA SMA-seeded; Wilder ATR14.
+- TSLA: close 378.73; EMA20 364.3369; EMA50 362.5575; ATR14 12.74587; prior20 high 386.83.
+- NVTS: close 12.34; EMA20 11.9053; EMA50 12.5778; ATR14 0.82156; prior20 high 13.195.
+- SOUN: close 5.88; EMA20 6.1423; EMA50 6.4732; ATR14 0.27289; prior20 high 6.87.
+- APLD: close 24.7; EMA20 25.9057; EMA50 27.6971; ATR14 1.69501; prior20 high 29.15.
+- SMCI: close 43.19; EMA20 40.5926; EMA50 37.6809; ATR14 2.21418; prior20 high 44.585.
+- TSLA and SMCI pass trend but fail breakout; NVTS, SOUN and APLD fail trend and breakout. No technical entry among monitored symbols.
+- TSLA full issuer page rechecked: earnings October 21 after close, outside two-session restriction. https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments
+- News listing rechecked: https://www.benzinga.com/quote/tsla/news . Same delivery/political/chip-related headlines as prior check; no newly established material fact from this listing. No independent full news clearance for an order.
+- Decision BLOCKED: unchanged fractional protective-stop restriction; whole TSLA share exceeds USD 100 exposure cap. Alternatives analysis-only; their earnings/news gates not cleared. No orders placed, changed or cancelled.
+- No material state change; journal unchanged; quiet notification.
