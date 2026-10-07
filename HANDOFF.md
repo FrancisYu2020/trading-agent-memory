@@ -1,10 +1,13 @@
+## Current monitoring scope - 2026-10-07
+
+The user selected SPCX as the monitoring target. Read policy/spcx-monitor.md. SPCX replaces TSLA and the previous candidate basket in routine scans. This is a monitoring request, not an order instruction or expanded autonomous trading authorization. Do not open new TSLA positions from this monitor. Preserve all existing risk limits and any existing-position protections.
 # Trading Agent Handoff
 
 Read this file first when starting a new Codex or ChatGPT task for the trading workflow.
 
 ## Objective
 
-Monitor TSLA on regular U.S. trading days every 30 minutes from 09:30 through 15:30 America/New_York. Trade only multi-day to multi-month TSLA common-stock long swings under the repository policies. Avoid intended intraday trading.
+Monitor SPCX on regular U.S. trading days every 30 minutes from 09:30 through 15:30 America/New_York, under policy/spcx-monitor.md. Earlier TSLA execution rules below are retained for history and existing-position protection; new TSLA entries are inactive.
 
 ## Required reading
 
@@ -35,7 +38,7 @@ Do not claim the connection works unless the task receives live, timestamped bro
 
 ## Automation
 
-The existing heartbeat ID `tsla`, now named `股票波段监控`, was migrated on 2026-09-28 to task `01a0da0f-d4cd-7042-b41a-f9f3c4c82398`. Its persisted target and ACTIVE status were read back and verified. The original task is no longer its target; no second monitor was created.
+The existing heartbeat ID `tsla`, now named `SPCX 波段监控`, was migrated on 2026-09-28 to task `01a0da0f-d4cd-7042-b41a-f9f3c4c82398`. Its persisted target and ACTIVE status were read back and verified. The original task is no longer its target; no second monitor was created.
 
 Schedule remains weekdays every 30 minutes from 09:30 through 15:30 America/New_York, with exchange-holiday and regular-session checks. The prompt now follows current repository policy, requires actual fresh tool discovery and broker calls, records connection failures as BLOCKED, and supports read-only comparison of the discussed replacement candidates. Replacement tickers are not authorized for trades yet.
 

@@ -12,3 +12,9 @@
 - Decision BLOCKED: unchanged fractional protective-stop restriction. Pre-11:30 observation only; no holdings to manage, no broker writes.
 - Full daily-bar/earnings/news entry assessment not performed at this observation; refresh completed bars through October 6 before later entry decisions. Old indicators not used as current.
 - No material account/connection change since 10:14 check; timing issue already notified. Journal unchanged.
+
+## Manual monitoring-target update - 2026-10-07
+
+- Existing monitor changed to SPCX; fresh SPCX quote endpoint succeeded at 10:19 ET, USD 168.135. This quote-only manual check does not claim a fresh full account verification; last full verification remains the scheduled check above.
+- WATCH (monitoring selected), execution BLOCKED pending explicit SPCX order authorization and existing risk/stop constraints. No full technical assessment or broker writes.
+- Existing heartbeat updated, next scheduled SPCX run pending verification.
