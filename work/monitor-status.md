@@ -1,20 +1,10 @@
 # Latest scheduled monitor check
 
-- Heartbeat trigger 2026-10-07 10:15:22 ET; actual broker quote check 10:16:00-03 ET. This trigger is off the nominal half-hour grid; no claim that the earlier scheduling delay is resolved.
-- Git pull --ff-only succeeded; all required instructions/policies/current journal read; initial working tree clean.
-- Connection SUCCESS: fresh discovery and actual accounts, portfolio, equity positions/orders and timestamped quotes.
-- Equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero; no equity positions/orders or next cursor.
-- TSLA: 375.139400; bid/ask 375.130000/375.200000; trade 2026-10-07T14:16:03.855511571Z; October 6 official close 380.68.
-- NVTS: 11.485000; bid/ask 11.480000/11.490000; trade 2026-10-07T14:16:00.478348049Z; October 6 official close 11.97.
-- SOUN: 5.655000; bid/ask 5.650000/5.660000; trade 2026-10-07T14:16:00.70992463Z; October 6 official close 5.72.
-- APLD: 24.158300; bid/ask 24.150000/24.160000; trade 2026-10-07T14:16:03.018225115Z; October 6 official close 25.34.
-- SMCI: 43.800100; bid/ask 43.810000/43.820000; trade 2026-10-07T14:16:03.102402123Z; October 6 official close 43.46.
-- Decision BLOCKED: unchanged fractional protective-stop restriction. Pre-11:30 observation only; no holdings to manage, no broker writes.
-- Full daily-bar/earnings/news entry assessment not performed at this observation; refresh completed bars through October 6 before later entry decisions. Old indicators not used as current.
-- No material account/connection change since 10:14 check; timing issue already notified. Journal unchanged.
-
-## Manual monitoring-target update - 2026-10-07
-
-- Existing monitor changed to SPCX; fresh SPCX quote endpoint succeeded at 10:19 ET, USD 168.135. This quote-only manual check does not claim a fresh full account verification; last full verification remains the scheduled check above.
-- WATCH (monitoring selected), execution BLOCKED pending explicit SPCX order authorization and existing risk/stop constraints. No full technical assessment or broker writes.
-- Existing heartbeat updated, next scheduled SPCX run pending verification.
+- Trigger 2026-10-07 10:30:52 ET; actual broker quote check 10:31:46 ET.
+- Git pull --ff-only succeeded after sandbox network retry; required policies and current journal read; initial working tree clean.
+- Connection SUCCESS: freshly discovered and called account, portfolio, all stock positions/orders and SPCX timestamped quote endpoints.
+- Account equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero; no stock positions/orders and no pagination cursor.
+- SPCX USD 168.33 at 2026-10-07T14:31:46.405257351Z; bid/ask 168.33/168.35; October 6 official close 171.92; active listing.
+- Pre-11:30 observation only. Full daily-bar/earnings/news assessment and same-time relative volume not performed; no claim of a cleared signal or volume surge.
+- Execution BLOCKED: monitoring-only SPCX scope, one whole share exceeds USD 100 cap, fractional protective-stop constraint unchanged. No holdings to manage; no broker writes.
+- First scheduled SPCX run now verified, beyond configuration-only confirmation. Notify once; unchanged later checks remain quiet.
