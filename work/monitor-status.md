@@ -1,9 +1,9 @@
 # SPCX monitor status
 
-- Trigger: 2026-10-14T14:30:28.050Z; actual broker check approximately 10:31 ET (America/New_York).
-- git pull --ff-only succeeded; required policy/handoff/monthly journal read; working tree clean before update.
-- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all equity positions/orders and timestamped SPCX quote calls succeeded. No remaining pagination.
-- Account value/cash/buying power/unleveraged buying power USD 500; pending deposits zero; stock positions/orders empty.
-- SPCX active, has traded: 153.30 at 2026-10-14T14:31:02.805736555Z. Bid/ask 153.29/153.30 at 14:31:02.375837918Z. October 13 official close and adjusted previous close 156.54; change approximately -2.07%.
-- WATCH: before 11:30, observation only. No full technical/earnings/news clearance or same-time intraday volume confirmation claimed. No holdings requiring risk management.
-- Monitoring-only authority and existing risk limits unchanged; fractional protective stops unresolved. No broker writes. No material actionable change or new connection fault; journal unchanged.
+- Trigger 2026-10-14T15:00:28.983Z; actual broker check approximately 11:01 ET.
+- BLOCKED: git pull --ff-only failed with GitHub Permission denied (publickey). Remote policy freshness unverified; local required files read. Working tree was clean. No trade or full signal evaluation.
+- Robinhood connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders and timestamped SPCX quote reads succeeded; no pagination remains.
+- Equity/cash/buying power/unleveraged buying power USD 500, pending deposits zero; stock positions/orders empty.
+- SPCX active: 154.22 at 2026-10-14T15:01:06.315139581Z; bid/ask 154.21/154.25 at 15:01:05.525290755Z. Official October 13 close/adjusted prior close 156.54; approximately -1.48%.
+- Before 11:30 observation only; no full technical, news, earnings or intraday relative-volume clearance claimed. Monitoring-only authority/risk limits unchanged; no broker writes.
+- New repository authentication failure recorded in journal. Local commit retained if publication fails.
