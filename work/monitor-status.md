@@ -7,3 +7,4 @@
 - SPCX active: 154.22 at 2026-10-14T15:01:06.315139581Z; bid/ask 154.21/154.25 at 15:01:05.525290755Z. Official October 13 close/adjusted prior close 156.54; approximately -1.48%.
 - Before 11:30 observation only; no full technical, news, earnings or intraday relative-volume clearance claimed. Monitoring-only authority/risk limits unchanged; no broker writes.
 - New repository authentication failure recorded in journal. Local commit retained if publication fails.
+- Same-run recovery: push e262ce2 succeeded; subsequent git pull --ff-only succeeded (Already up to date). Synchronization block cleared; final decision WATCH, observation only. Initial SSH error was transient; underlying cause unknown.
