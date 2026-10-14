@@ -1,10 +1,12 @@
 # SPCX monitor status
 
-- Trigger 2026-10-14T15:00:28.983Z; actual broker check approximately 11:01 ET.
-- BLOCKED: git pull --ff-only failed with GitHub Permission denied (publickey). Remote policy freshness unverified; local required files read. Working tree was clean. No trade or full signal evaluation.
-- Robinhood connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders and timestamped SPCX quote reads succeeded; no pagination remains.
-- Equity/cash/buying power/unleveraged buying power USD 500, pending deposits zero; stock positions/orders empty.
-- SPCX active: 154.22 at 2026-10-14T15:01:06.315139581Z; bid/ask 154.21/154.25 at 15:01:05.525290755Z. Official October 13 close/adjusted prior close 156.54; approximately -1.48%.
-- Before 11:30 observation only; no full technical, news, earnings or intraday relative-volume clearance claimed. Monitoring-only authority/risk limits unchanged; no broker writes.
-- New repository authentication failure recorded in journal. Local commit retained if publication fails.
-- Same-run recovery: push e262ce2 succeeded; subsequent git pull --ff-only succeeded (Already up to date). Synchronization block cleared; final decision WATCH, observation only. Initial SSH error was transient; underlying cause unknown.
+- Trigger 2026-10-14T15:30:30.356Z; actual broker checks approximately 11:31 ET. git pull --ff-only successful; required files read; clean working tree before update.
+- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders, quote, fundamentals and history reads succeeded. No remaining pagination. Account equity/cash/buying power/unleveraged buying power USD 500; no stock positions/orders; pending deposits zero.
+- SPCX 154.24 at 2026-10-14T15:31:08.311395936Z, bid/ask 154.20/154.24 at 15:31:07.906995023Z. Active. October 13 official/adjusted prior close 156.54; approximately -1.47%.
+- Fundamentals identify Space Exploration Technologies Corp. History restricted to June 12 IPO onward: 85 completed non-interpolated split-adjusted daily bars through October 13; excludes predecessor symbol history.
+- SMA-seeded EMA20 156.48212, EMA50 150.78164; Wilder ATR14 7.01651. Prior close 156.54 narrowly passes trend filter; live price below EMA20 and prior20 high 176.4199. Breakout FAIL; chase ceiling 178.17403.
+- Last confirmed two-bars-each-side swing low October 8: 160.00 (already breached, not intact support). Hypothetical stop must be below min(154.24 - 2*7.01651, 160) = 140.20699. One share exceeds USD 100 exposure cap and USD 2.50 initial risk budget. Fractional protective stops unresolved; executable size zero, no order proposed.
+- Session volume 31,285,607. Historical same-time cumulative volume not obtained; cannot confirm intraday volume surge. No comparison with full-day volume averages used.
+- Next earnings NOT confirmed: issuer investor/events pages retrieved but no future date exposed. https://ir.spacex.com/investors/ ; https://ir.spacex.com/events/default.aspx .
+- News reviewed: https://www.benzinga.com/quote/SPCX/news reports launch activity, India approval competition, Ukraine military Starlink speed allegations and mobile infrastructure challenges. These are secondary headlines, not independently verified facts or full news clearance. No actionable verified catalyst established.
+- BLOCKED on no breakout, unconfirmed earnings/news clearance, monitoring-only authorization and unresolved fractional protective stops. Broker and Git connection are healthy. No broker writes, no holdings to manage; no actionable change requiring notification. Journal unchanged.
