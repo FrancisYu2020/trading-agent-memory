@@ -1,19 +1,9 @@
 # SPCX monitor status
 
-- Trigger 2026-10-19T13:28:16.017Z; actual time gate checked 2026-10-19T13:28:26Z (09:28:26 America/New_York).
-- WATCH / session skipped: before the authorized 09:30 regular-session monitoring window. No market-signal assessment or broker calls performed on this early trigger; connection NOT TESTED, quote NOT REFRESHED. This is not a successful NO CHANGE check or a connection failure.
-- Git pull --ff-only succeeded. No orders or policy changes. Prior verified broker snapshot below is historical, not current.
-
-## Previous verified check (October 16)
-- Trigger 2026-10-16T19:31:01.543Z; actual broker check 15:31:28 America/New_York. Git pull --ff-only succeeded; required policies and October journal read; working tree clean before update.
-- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders, quote, fundamentals and split-adjusted daily history calls succeeded. No remaining pagination. Equity/cash/buying power/unleveraged buying power USD 500; pending deposits zero; no stock positions/orders.
-- SPCX active, USD 143.87 at 2026-10-16T19:31:28.173239488Z; bid/ask 143.86/143.88 at 19:31:27.512390689Z. October 15 official/adjusted close 148.62; change -3.20%.
-- Broker profile identifies Space Exploration Technologies Corp. 87 completed non-interpolated split-adjusted daily bars June 12 through October 15; predecessor history excluded.
-- SMA-seeded EMA20 155.36092, EMA50 150.74880; Wilder ATR14 7.23219. Prior close below both EMAs: trend FAIL. Current quote below prior20 high 176.4199: breakout FAIL. Chase ceiling 178.22795.
-- Confirmed two-bars-each-side swing low October 8 at 160 is breached, not intact support. Hypothetical stop below min(143.88 - 2*7.23219,160) = 129.41562. One share exceeds USD 100 exposure and USD 2.50 initial-risk limits; fractional protective stop unresolved. Executable size zero.
-- Session open/high/low 147.81/147.92/142.9648; cumulative volume 68,803,806. Historical same-time cumulative volume not obtained; cannot confirm intraday volume surge. No full-day-average ratio used.
-- Issuer events page retrieved but next earnings date not exposed: https://ir.spacex.com/events/default.aspx . Earnings remain unconfirmed.
-- News headlines reviewed: https://www.benzinga.com/quote/SPCX/news . October 16 headlines include a Q3 earnings preview and discuss spectrum, Nvidia/space AI infrastructure, Roadster-related merger speculation and Starshield scrutiny. New sector-decline headline is truncated/paywalled. Secondary headlines not independently verified; no full news clearance established.
-- BLOCKED: trend/breakout fail; earnings/news clearance incomplete; monitoring-only authorization and fractional protective-stop constraint persist. Broker/Git healthy; no broker writes, no policy changes.
-- No actionable opportunity or holdings requiring management. Existing trend failure persists; journal unchanged.
-- Continuity: 13:00 broker reads succeeded but assessment/logging was unfinished; 13:31 and 14:00 triggers have no completed-check evidence. Gap was reported at 14:30 ET; current check completed normally.
+- Trigger 2026-10-19T14:00:46.300Z; actual broker check 10:01:12 America/New_York. Git pull --ff-only succeeded; required policies and October journal read.
+- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders and timestamped SPCX quote calls succeeded. No remaining pagination.
+- Account equity/cash/buying power/unleveraged buying power USD 350, pending deposits zero; no stock positions/orders. Prior verified equity USD 500. Cause of USD 150 reduction not established; not classified as trading loss.
+- Existing formula now yields exposure ceiling min(100,350*20%) = USD 70 and initial-stop risk 350*0.50% = USD 1.75. No policy change.
+- SPCX active, USD 147.57 at 2026-10-19T14:01:12.958068398Z; bid/ask 147.55/147.58 at 14:01:12.24962394Z. October 16 official/adjusted close 146.03; change +1.05%.
+- WATCH: before 11:30, observation only. No full daily signal, earnings/news clearance or intraday relative-volume confirmation claimed. No holdings requiring risk management. Monitoring-only authorization and unresolved fractional protective stops persist; one whole share exceeds exposure ceiling.
+- No broker writes. Journal updated for material account-value/risk-budget change; notify once.
