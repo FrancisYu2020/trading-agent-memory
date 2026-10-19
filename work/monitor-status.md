@@ -1,9 +1,12 @@
 # SPCX monitor status
 
-- Trigger 2026-10-19T15:00:17.244Z; actual broker check 11:00:44 America/New_York. Git pull --ff-only succeeded; required policies and October journal read.
-- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders and timestamped SPCX quote calls succeeded. No remaining pagination.
-- Account equity/cash/buying power/unleveraged buying power USD 350, pending deposits zero; no stock positions/orders. Unchanged from 10:01 ET; earlier balance reduction already recorded.
-- Existing formula now yields exposure ceiling min(100,350*20%) = USD 70 and initial-stop risk 350*0.50% = USD 1.75. No policy change.
-- SPCX active, USD 149.795 at 2026-10-19T15:00:44.084633733Z; bid/ask 149.80/149.82 at 15:00:43.584592125Z. October 16 official/adjusted close 146.03; change +2.58%.
-- WATCH: before 11:30, observation only. No full daily signal, earnings/news clearance or intraday relative-volume confirmation claimed. No holdings requiring risk management. Monitoring-only authorization and unresolved fractional protective stops persist; one whole share exceeds exposure ceiling.
-- No broker writes. No material account or actionable signal change; journal unchanged.
+- Trigger 2026-10-19T15:31:47.908Z; actual broker check 11:32:22 America/New_York. Git pull --ff-only succeeded; required policies and October journal read.
+- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders, quotes, fundamentals and split-adjusted history succeeded; no pagination remains. Equity/cash/unleveraged buying power USD 350; pending deposits zero; no stock positions/orders.
+- SPCX active, 150.19 at 2026-10-19T15:32:22.413076857Z; bid/ask 150.18/150.19 at 15:32:20.813497213Z. Official/adjusted October 16 close 146.03; +2.85%.
+- Broker profile identifies Space Exploration Technologies Corp. 88 completed non-interpolated split-adjusted bars June 12 through October 16; no predecessor data.
+- EMA20 154.47226, EMA50 150.56375, Wilder ATR14 7.12061. Prior close below both averages: trend FAIL; price below prior20 high 176.4199: breakout FAIL. Chase ceiling 178.20005.
+- Confirmed October 8 swing low 160 already breached. Hypothetical stop below min(150.19-2*7.12061,160) = 135.94879. One share exceeds USD 70 exposure and USD 1.75 stop-risk limits; fractional protective stops unresolved; executable size zero.
+- Session open/high/low 149.22/151.01/147.31; cumulative volume 36,135,123. No historical same-time cumulative volume obtained; cannot confirm intraday volume surge.
+- Issuer events page exposes no next date: https://ir.spacex.com/events/default.aspx . Benzinga now reports October 20 after-close earnings and 16:30 conference call: https://www.benzinga.com/quote/SPCX/news . Linked webcast requires JavaScript and supplied no confirming details: https://events.q4inc.com/attendee/273501782/guest . Date is secondary-source reported, not primary-confirmed; if accurate, within prohibited two-session window.
+- News headlines reviewed include earnings, share gifts, European satellite spectrum competition and Starship claims; secondary headlines not independently verified. No full news clearance.
+- BLOCKED: trend/breakout fail, earnings clearance incomplete/reported imminent; monitoring-only authority and fractional-stop constraints persist. Broker healthy; no writes. Journal records newly reported earnings timing; no actionable opportunity or holdings requiring management.
