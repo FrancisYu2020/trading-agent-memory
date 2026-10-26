@@ -1,9 +1,12 @@
 # SPCX monitor status
 
-- Trigger 2026-10-26T15:28:27.903Z; actual broker check 11:28:40 America/New_York.
-- Repository access normal: git pull --ff-only succeeded, required policies and October journal read; working tree initially clean.
-- Connection SUCCESS: freshly discovered and called accounts, portfolio, all stock positions, stock orders and timestamped SPCX quote. No positions/orders or pagination; equity/cash/unleveraged buying power USD 350, pending deposits zero.
-- SPCX active, last 150.16 at 2026-10-26T15:28:40.047099328Z; bid/ask 150.14/150.17 at 15:28:39.184854064Z. Official/adjusted October 23 close 147.49. Last trade and book are asynchronous snapshots.
-- WATCH: before 11:30 ET, observation only. Full daily signal, next earnings, news, technical stop and volume confirmation not refreshed this run; prior October 23 calculations are not current signal clearance. No holdings requiring risk management.
-- Exposure cap USD 70 and initial risk USD 1.75 unchanged. No SPCX order authority, fractional protective-stop mechanism unresolved; executable size zero. No broker writes.
-- Earlier October 26 checks were BLOCKED by unresponsive local commands, despite successful broker reads: 09:32 ET quote 147.14 (13:32:20.979339152Z), 10:02 ET 145.236 (14:02:04.493158458Z), 10:29 ET 147.835 (14:29:44.476356305Z). All showed USD 350 and no stock positions/orders. These are retrospective records of observed results, not newly performed checks; repository updates were unavailable then.
+- Trigger 2026-10-26T15:59:25.336Z; actual broker check 11:59:36 America/New_York. Git pull --ff-only succeeded; required policies and October journal read; initially clean tree.
+- Connection SUCCESS: fresh discovery and actual accounts, portfolio, all stock positions/orders and timestamped quote calls succeeded. Equity/cash/unleveraged buying power USD 350; pending deposits zero; no stock positions/orders or pagination.
+- SPCX active, 149.375 at 2026-10-26T15:59:36.162019347Z; bid/ask 149.39/149.41 at 15:59:35.980337799Z. Official/adjusted October 23 close 147.49.
+- Broker profile identifies Space Exploration Technologies Corp./SpaceX. 93 completed split-adjusted daily bars restricted to June 12 IPO onward through October 23: EMA20 152.45975, EMA50 150.35730, Wilder ATR14 8.09363. Prior close fails both EMA tests; EMA20 above EMA50. Prior20 high 176.4199; chase ceiling 178.44331. Current price fails breakout.
+- Regular cumulative volume 62,343,955. Historical same-time cumulative comparison unavailable; intraday relative volume unconfirmed. No comparison to full-day average used as intraday ratio.
+- Confirmed two-bars-each-side swing low October 15 at 140.66. At ask 149.41, technical stop must be below min(133.22275,140.66) = 133.22275. Risk-only quantity below 0.10810975 before final stop/rounding. Exposure cap USD 70; initial risk USD 1.75; whole share exceeds cap; executable size zero.
+- Next earnings unconfirmed: https://ir.spacex.com/events/default.aspx returned no event details. https://www.benzinga.com/quote/SPCX/news lists past October 20 earnings, not next release.
+- Material news: secondary report describes binding Apollo equipment-financing commitment around USD 40 billion, but final pricing and closing pending, expected by year-end. This differs from Musk's reported closed-deal wording and prior expected-next-week timeline. Underlying filing not independently verified; do not treat as completed funding. https://www.benzinga.com/markets/prediction-markets/26/10/62589765/spacex-apollo-40-billion-ai-chip-financing
+- EasyJet/Starlink and Ukraine headlines seen on index but not independently verified; no blanket news clearance.
+- BLOCKED: trend and breakout fail, next earnings unknown, no SPCX authority and fractional protective stops unresolved. No broker writes. Journal updated for material financing-status clarification.
