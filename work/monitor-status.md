@@ -1,11 +1,11 @@
 # SPCX monitor status
 
-- Trigger 2026-10-30T16:31:29.792Z; actual broker check 12:32:02 America/New_York. Git pull --ff-only succeeded; required policies and latest October journal read; initial tree clean.
+- Trigger 2026-10-30T17:02:00.336Z; actual broker check 13:02:15 America/New_York. Git pull --ff-only succeeded; required policies and latest October journal read; initial tree clean.
 - Connection SUCCESS: freshly discovered/called accounts, portfolio, all stock positions/orders and timestamped SPCX quote. Equity/cash/unleveraged buying power USD 350; pending deposits zero; no positions/orders or pagination.
-- SPCX active, 137.76 at 2026-10-30T16:32:02.012401422Z; bid/ask 137.74/137.76 at 16:32:02.043654089Z. Official October 29 close 143.89. Broker profile identifies Space Exploration Technologies Corp./SpaceX.
+- SPCX active, 137.835 at 2026-10-30T17:02:15.149355102Z; bid/ask 137.82/137.85 at 17:02:15.275345745Z. Official October 29 close 143.89. Broker profile identifies Space Exploration Technologies Corp./SpaceX.
 - 97 completed split-adjusted daily bars restricted to June 12 IPO onward through October 29. EMA20 150.32598; EMA50 149.72591; Wilder ATR14 7.36196. Prior close fails both EMA tests; EMA20 above EMA50. Prior20 high 176.4199; chase ceiling 178.26039; breakout fails.
-- Regular cumulative volume 60,878,243; same-time historical cumulative comparison unavailable, intraday relative volume unconfirmed. Today low 135.91; current price remains below yesterday low 141.03. Opening decline already notified; no closing confirmation.
-- Latest confirmed two-bars-each-side swing low October 22 at 143.21. Technical stop below min(137.76 - 2 ATR,143.21) = 123.03608. Risk-only size below 0.11885425 before final stop/rounding. Exposure cap USD 70, initial risk USD 1.75. Whole share exceeds cap; executable size zero.
+- Regular cumulative volume 65,842,683; same-time historical cumulative comparison unavailable, intraday relative volume unconfirmed. Today low 135.91; current price remains below yesterday low 141.03. Opening decline already notified; no closing confirmation.
+- Latest confirmed two-bars-each-side swing low October 22 at 143.21. Technical stop below min(137.85 - 2 ATR,143.21) = 123.12608. Risk-only size below 0.11885425 before final stop/rounding. Exposure cap USD 70, initial risk USD 1.75. Whole share exceeds cap; executable size zero.
 - Next earnings unconfirmed; issuer events page supplies no date: https://ir.spacex.com/events/default.aspx . No full earnings clearance.
 - Secondary report describes SpaceX October 28 letter opposing T-Mobile/AFTRCC proposed satellite transmission limits; underlying filing not independently verified, no final FCC decision established: https://www.benzinga.com/news/space/26/10/62734270/spacex-hits-back-at-t-mobiles-misplaced-desire-to-harm-starlink-by-opposing-modernized-spectrum-rules
 - Secondary report quotes Amazon management expecting initial Leo service this year; outlook, not completed rollout: https://www.benzinga.com/markets/earnings/26/10/62727056/amazons-starlink-rival-leo-is-coming-this-year-jassy-says-service-is-on-track
