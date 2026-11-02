@@ -1,14 +1,8 @@
 # SPCX monitor status
 
-- Trigger 2026-10-30T19:29:03.582Z; actual broker check 15:29 America/New_York (quote timestamp below). Git pull --ff-only succeeded; required policies and latest October journal read; initial tree clean.
-- Connection SUCCESS: freshly discovered/called accounts, portfolio, all stock positions/orders and timestamped SPCX quote. Equity/cash/unleveraged buying power USD 350; pending deposits zero; no positions/orders or pagination.
-- SPCX active, 135.16 at 2026-10-30T19:29:10.664391432Z; bid/ask 135.15/135.17 at 19:29:09.979426865Z. Official October 29 close 143.89. Broker profile identifies Space Exploration Technologies Corp./SpaceX.
-- 97 completed split-adjusted daily bars restricted to June 12 IPO onward through October 29. EMA20 150.32598; EMA50 149.72591; Wilder ATR14 7.36196. Prior close fails both EMA tests; EMA20 above EMA50. Prior20 high 176.4199; chase ceiling 178.26039; breakout fails.
-- Regular cumulative volume 96,176,055; same-time historical cumulative comparison unavailable, intraday relative volume unconfirmed. Today low 135.04; current price remains below yesterday low 141.03. Opening decline already notified; no closing confirmation.
-- Latest confirmed two-bars-each-side swing low October 22 at 143.21. Technical stop below min(135.17 - 2 ATR,143.21) = 120.44608. Risk-only size below 0.11885425 before final stop/rounding. Exposure cap USD 70, initial risk USD 1.75. Whole share exceeds cap; executable size zero.
-- Next earnings unconfirmed; issuer events page supplies no date: https://ir.spacex.com/events/default.aspx . No full earnings clearance.
-- Secondary report describes SpaceX October 28 letter opposing T-Mobile/AFTRCC proposed satellite transmission limits; underlying filing not independently verified, no final FCC decision established: https://www.benzinga.com/news/space/26/10/62734270/spacex-hits-back-at-t-mobiles-misplaced-desire-to-harm-starlink-by-opposing-modernized-spectrum-rules
-- Secondary report quotes Amazon management expecting initial Leo service this year; outlook, not completed rollout: https://www.benzinga.com/markets/earnings/26/10/62727056/amazons-starlink-rival-leo-is-coming-this-year-jassy-says-service-is-on-track
-- BLOCKED: trend/breakout fail, earnings unknown, no SPCX authority, fractional protective stops unresolved. No broker writes or risk changes. Existing heartbeat retained. Events/news refreshed; no new material change established since 11:30. Journal unchanged.
-
-- News index adds a broad space-sector selloff headline; full paywalled detail unavailable, no new issuer-specific catalyst established: https://www.benzinga.com/quote/SPCX/news .
+- Trigger 2026-11-02T14:28:43.333Z; actual check 09:29 America/New_York (EST, UTC-05:00), before the 09:30 monitoring window. Regular-session scan skipped; no full entry assessment before 11:30.
+- Git pull --ff-only succeeded; initial tree clean. Required policies read. November journal does not yet exist; latest October entries reviewed. No material journal update required.
+- Connection SUCCESS: freshly discovered and called accounts, portfolio, all stock positions, stock orders and SPCX quote. Account equity/cash/unleveraged buying power USD 350; pending deposits zero; no stock positions/orders or pagination.
+- SPCX active; premarket trade 137.12 at 2026-11-02T14:29:13.171910065Z; bid/ask 137.04/137.13 at 14:29:12.805857886Z. Official October 30 close 134.72. The last regular-session trade 134.71 is dated October 30 and is not a current regular-session quote.
+- WATCH: pre-open observation only. No existing exposure requiring risk action. Daily indicators, earnings and news not refreshed for this out-of-window check; previous values are not represented as current clearance. Intraday relative volume unconfirmed.
+- Executable size zero: no SPCX order authority; fractional protective-stop mechanism unresolved. Exposure ceiling USD 70 and initial risk USD 1.75 remain unchanged. No broker writes, new TSLA positions, or stop changes. Existing heartbeat retained; no second monitor.
