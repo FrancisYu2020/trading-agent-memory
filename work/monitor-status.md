@@ -1,8 +1,12 @@
 # SPCX monitor status
 
-- Trigger 2026-11-02T16:28:17.055Z; actual broker check 11:28 America/New_York (EST, UTC-05:00). Regular-session observation; full entry assessment deferred until 11:30.
-- Git pull --ff-only succeeded; initial tree clean. Required policies and November journal read. No new material change since the notified morning rebound; journal unchanged.
-- Connection SUCCESS: freshly discovered/called accounts, portfolio, all stock positions/orders and timestamped SPCX quote. Account equity/cash/unleveraged buying power USD 350; pending deposits zero; no positions/orders or pagination.
-- SPCX active, regular-session trade 140.8552 at 2026-11-02T16:28:23.50559834Z; bid/ask 140.85/140.87 at 16:28:20.455519217Z. Official October 30 close 134.72; current gain about 4.55%. Previous regular-session observation 140.70 at 10:59 ET. Intraday rebound, not a confirmed trend reversal or entry signal; no causal news attribution.
-- WATCH before 11:30. No existing exposure requiring protective action. Full daily indicators, earnings and news assessment deferred; no claim of cleared conditions. Same-time historical volume comparison unavailable; intraday relative volume unconfirmed.
-- Executable size zero: no SPCX order authority and fractional protective stops unresolved. Exposure cap USD 70; initial risk USD 1.75. No broker writes, new TSLA positions or risk changes. Existing heartbeat retained.
+- Trigger 2026-11-02T17:00:47.547Z; actual broker check 12:01 America/New_York (EST). Git pull --ff-only succeeded; required policies and November journal read; initial tree clean.
+- Connection SUCCESS: freshly discovered/called accounts, portfolio, all stock positions/orders and timestamped SPCX quote. Equity/cash/unleveraged buying power USD 350; pending deposits zero; no positions/orders or pagination.
+- SPCX active, 140.94 at 2026-11-02T17:01:02.77130918Z; bid/ask 140.84/140.86 at 17:01:02.007475905Z. Official October 30 close 134.72. Broker profile identifies Space Exploration Technologies Corp./SpaceX.
+- 98 completed split-adjusted daily bars restricted to June 12 IPO onward through October 30. EMA20 148.83969; EMA50 149.13744; Wilder ATR14 7.50682. Prior close below both EMAs; EMA20 now below EMA50. Prior20 high 176.4199; chase ceiling 178.29660; breakout fails.
+- Regular cumulative volume 49,079,933; historical same-time comparison unavailable; intraday relative volume unconfirmed. Current rebound is not a cleared long setup.
+- Latest confirmed two-bars-each-side swing low October 22 at 143.21. Technical stop below min(140.86 - 2 ATR,143.21) = 125.84636. Risk-only size below 0.11656070 before final stop/rounding. Exposure cap USD 70; initial risk USD 1.75; whole share exceeds cap; executable size zero.
+- Next earnings unconfirmed; issuer events page supplies no date: https://ir.spacex.com/events/default.aspx . No full earnings clearance.
+- Secondary report describes talks to acquire Boost Mobile or access its leased network; no signed agreement verified, carrier consent may be needed: https://www.benzinga.com/trading-ideas/movers/26/11/62778904/spacex-pursues-wireless-back-door-after-verizon-t-mobile-atandt-reportedly-said-no
+- Secondary report says judge declined to dismiss NAACP turbine lawsuit; case proceeds, not a final liability judgment; underlying court opinion not independently verified: https://www.benzinga.com/markets/tech/26/11/62765463/elon-musks-spacex-fails-to-dismiss-naacp-lawsuit-over-memphis-data-center-gas-turbines
+- BLOCKED: trend/breakout fail, earnings unknown, no SPCX authority, fractional protective stops unresolved. No broker writes or risk changes. Existing heartbeat retained. Material technical/news update journaled.
