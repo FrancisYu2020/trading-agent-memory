@@ -65,3 +65,11 @@ BLOCKED. All five required Robinhood reads succeeded. Equity, cash and unleverag
 The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 was below both averages. The prior 20-session high of 171.31 remains above the quote. Through 14:00 ET, nine completed half-hour bars totaled 45941128 shares versus a matched 20-session mean of 37282945 (1.23x). Fundamentals volume was 101,410,625 near 14:28. Overall relative volume remains unconfirmed across feeds.
 
 The issuer events page supplied no confirmed earnings date. The reviewed news index showed no new material company development. At the ask the technical stop would be below 119.7522, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure cap and USD 1.75 initial risk budget. Executable size zero given the read-only mandate and unresolved fractional protective stop.
+
+## 2026-11-04 15:02:33 ET
+
+BLOCKED. All five Robinhood reads succeeded. Equity, cash and unleveraged buying power were USD 350. Stock positions and orders were empty. SPCX traded at 133.85 at 20:02:33.264915784 UTC with bid/ask 133.83/133.85.
+
+The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 was below both averages. Price was below the prior 20-session high of 171.31. Through 15:00 ET, eleven completed half-hour bars totaled 52693324 shares versus a matched 20-session mean of 42042962 (1.25x). Fundamentals volume was 108,263,617 near 15:02. Overall relative volume remains unconfirmed across feeds.
+
+The issuer events page supplied no confirmed earnings date. The reviewed SPCX news index showed no new material company development. At the ask the technical stop would be below 119.0222, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure cap and USD 1.75 initial risk budget. Executable size zero given the read-only mandate and unresolved fractional protective stop.
