@@ -33,3 +33,11 @@ BLOCKED. All five required Robinhood reads succeeded. Equity, cash and unleverag
 The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 failed both averages. The 20-session breakout is 171.31 and the chase ceiling is 173.1635. The quote preceded 12:30, so the last completed half-hour comparison ends at noon. Bar volume was 36,091,016 versus a matched 20-session mean of 27,559,261 (1.31x). Current fundamentals volume was 82,901,959. Overall relative volume remains unconfirmed across feeds.
 
 No new issuer earnings date or material company development identified on the issuer events page and SPCX news index reviewed at noon and again this check. At the ask, the technical stop would be below 123.2322, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure cap and USD 1.75 initial risk budget. No SPCX order authority or supported fractional protective stop. Executable size zero.
+
+## 2026-11-04 12:58:59 ET
+
+BLOCKED. All five Robinhood reads succeeded. Equity, cash and unleveraged buying power were USD 350. No stock positions or orders. SPCX traded at 137.055 at 17:58:59.152926858 UTC with bid/ask 137.04/137.06.
+
+The 100 completed split-adjusted daily bars for SpaceX since its June 12 IPO through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. The prior close of 141.31 failed both averages. The prior 20-session high was 171.31. No breakout. Through 12:30 ET the six completed half-hour bars totaled 38675994 shares versus a matched 20-session mean of 30093118 (1.29x). The fundamentals feed reported 86,267,004 shares near 12:59. Overall relative volume remains unconfirmed across feeds.
+
+The issuer events page showed no confirmed earnings date. The reviewed news index showed no new material development since the preceding check. At the ask, the technical stop would be below 122.2322, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure and USD 1.75 initial risk limits. Executable size zero given the read-only mandate and unresolved fractional protective stop.
