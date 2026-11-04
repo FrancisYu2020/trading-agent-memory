@@ -49,3 +49,11 @@ BLOCKED. All five required Robinhood reads succeeded. Equity, cash and unleverag
 The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 was below both averages. Price was below the 20-session high of 171.31. Through 13:00 ET the seven completed half-hour bars totaled 40763555 shares versus a matched 20-session mean of 32331034 (1.26x). Fundamentals volume was 89,860,304 near 13:28. Cross-feed volume expansion remains unconfirmed.
 
 The issuer events page supplied no confirmed earnings date and the reviewed SPCX news index showed no new material development. At the ask the technical stop would be below 120.8922, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure limit and USD 1.75 risk budget. Executable size zero given the read-only mandate and unresolved fractional protective stop. No trades.
+
+## 2026-11-04 14:01:56 ET
+
+BLOCKED. All five required broker reads succeeded. Equity, cash and unleveraged buying power were USD 350. No stock positions or orders. SPCX last traded at 134.45 at 19:01:56.744089552 UTC, with bid/ask 134.45/134.46. Price revisited the area below the October 30 swing low of 134.50 already traded through this morning.
+
+The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 was below both averages. Price was below the prior 20-session high of 171.31. Through 14:00 ET, nine regular half-hour bars totaled 45941128 shares versus the matched 20-session mean of 37282945 (1.23x). The fundamentals feed reported 95,685,084 shares at the check. Overall relative volume remains unconfirmed across feeds.
+
+The issuer events page supplied no confirmed earnings date and the reviewed news index showed no new material company development. At the ask the technical stop would be below 119.6322. One share exceeds the USD 70 exposure cap and USD 1.75 initial risk budget. Executable size zero given the read-only mandate and unresolved fractional protective stop.
