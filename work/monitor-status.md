@@ -25,3 +25,11 @@ The five completed regular-session half-hour bars through noon totaled 36,091,01
 BLOCKED. The issuer events page supplied no confirmed earnings date. The reviewed SPCX news index showed no new material development since the Qualcomm agreement recorded above. Sources: https://ir.spacex.com/events/default.aspx and https://www.benzinga.com/quote/SPCX/news .
 
 At the ask the technical stop would be below 122.2922, using the lower of entry less two ATR and the confirmed swing low of 134.50. One share exceeds the USD 70 exposure limit and USD 1.75 risk budget. Executable size zero. SPCX has monitoring authorization only and fractional protective stops remain unresolved.
+
+## 2026-11-04 12:29:58 ET
+
+BLOCKED. All five required Robinhood reads succeeded. Equity, cash and unleveraged buying power were USD 350. No stock positions or orders. SPCX traded at 138.035 at 17:29:58.441314506 UTC with bid/ask 138.03/138.06.
+
+The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 failed both averages. The 20-session breakout is 171.31 and the chase ceiling is 173.1635. The quote preceded 12:30, so the last completed half-hour comparison ends at noon. Bar volume was 36,091,016 versus a matched 20-session mean of 27,559,261 (1.31x). Current fundamentals volume was 82,901,959. Overall relative volume remains unconfirmed across feeds.
+
+No new issuer earnings date or material company development identified on the issuer events page and SPCX news index reviewed at noon and again this check. At the ask, the technical stop would be below 123.2322, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure cap and USD 1.75 initial risk budget. No SPCX order authority or supported fractional protective stop. Executable size zero.
