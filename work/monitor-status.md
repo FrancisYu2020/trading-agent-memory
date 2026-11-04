@@ -41,3 +41,11 @@ BLOCKED. All five Robinhood reads succeeded. Equity, cash and unleveraged buying
 The 100 completed split-adjusted daily bars for SpaceX since its June 12 IPO through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. The prior close of 141.31 failed both averages. The prior 20-session high was 171.31. No breakout. Through 12:30 ET the six completed half-hour bars totaled 38675994 shares versus a matched 20-session mean of 30093118 (1.29x). The fundamentals feed reported 86,267,004 shares near 12:59. Overall relative volume remains unconfirmed across feeds.
 
 The issuer events page showed no confirmed earnings date. The reviewed news index showed no new material development since the preceding check. At the ask, the technical stop would be below 122.2322, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure and USD 1.75 initial risk limits. Executable size zero given the read-only mandate and unresolved fractional protective stop.
+
+## 2026-11-04 13:28:28 ET
+
+BLOCKED. All five required Robinhood reads succeeded. Equity, cash and unleveraged buying power were USD 350. Stock positions and orders were empty. SPCX traded at 135.705 at 18:28:28.782196872 UTC with bid/ask 135.70/135.72.
+
+The 100 completed split-adjusted SpaceX sessions from June 12 through November 3 yielded EMA20 147.0481, EMA50 148.3494 and ATR14 7.41389. Prior close 141.31 was below both averages. Price was below the 20-session high of 171.31. Through 13:00 ET the seven completed half-hour bars totaled 40763555 shares versus a matched 20-session mean of 32331034 (1.26x). Fundamentals volume was 89,860,304 near 13:28. Cross-feed volume expansion remains unconfirmed.
+
+The issuer events page supplied no confirmed earnings date and the reviewed SPCX news index showed no new material development. At the ask the technical stop would be below 120.8922, below the confirmed swing low of 134.50. One share exceeds the USD 70 exposure limit and USD 1.75 risk budget. Executable size zero given the read-only mandate and unresolved fractional protective stop. No trades.
