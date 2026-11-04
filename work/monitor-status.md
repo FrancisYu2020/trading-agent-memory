@@ -13,3 +13,15 @@ Morning read-only broker observations recovered from prior heartbeat results (ET
 - 10:01:15 SPCX 136.98
 - 10:32:08 SPCX 137.735
 - 10:59:49 SPCX 136.565
+
+## 2026-11-04 12:01 ET
+
+Broker connection SUCCESS. Fresh account, portfolio, all stock positions, stock orders and SPCX quote reads succeeded. Equity, cash and unleveraged buying power were USD 350. Stock positions and orders were empty.
+
+SPCX traded at 137.104 at 12:01:01.957866477 ET. Bid/ask 137.08/137.12. Prior close 141.31. SpaceX profile and 100 completed split-adjusted daily bars from June 12 through November 3 checked. EMA20 147.0481, EMA50 148.3494, ATR14 7.41389. Trend conditions fail. Price remains below the 20-session high of 171.31. Chase ceiling 173.1635.
+
+The five completed regular-session half-hour bars through noon totaled 36,091,016 shares. The same five bars averaged 27,559,261 over the preceding 20 sessions (1.31x). The fundamentals endpoint showed 78,598,322 shares around 12:01. Coverage of these feeds is unreconciled, so that ratio applies only to the bar series. Overall session volume expansion is unconfirmed.
+
+BLOCKED. The issuer events page supplied no confirmed earnings date. The reviewed SPCX news index showed no new material development since the Qualcomm agreement recorded above. Sources: https://ir.spacex.com/events/default.aspx and https://www.benzinga.com/quote/SPCX/news .
+
+At the ask the technical stop would be below 122.2922, using the lower of entry less two ATR and the confirmed swing low of 134.50. One share exceeds the USD 70 exposure limit and USD 1.75 risk budget. Executable size zero. SPCX has monitoring authorization only and fractional protective stops remain unresolved.
